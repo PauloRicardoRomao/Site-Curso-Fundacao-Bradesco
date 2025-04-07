@@ -48,6 +48,10 @@ header{
 	margin-left: 10%;
 }
 
+.botao-menu-mobile{
+	display: none;
+}
+
 /* definir as propriedades do menu */
 nav {
 	display: flex;
@@ -214,7 +218,7 @@ footer{
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%; 
-	min-height: 18%; 
+	min-height: 30vh; 
 	align-items: center;
 	justify-content: space-around;
 	background-color: #b50909; 
@@ -618,6 +622,385 @@ footer .footer-text a:active{
 		display: flex;
 		flex-direction: row;
 		width: 30%;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.8em;
+		color: #777;
+		background-color: transparent;
+		border: none;
+		border-radius: 20px;
+	}
+	
+	.botao-menu-mobile:hover, .botao-menu-mobile:active{
+		box-shadow: inset 0px 0px 25px 10px #bbb;
+	}
+
+	#banner{
+		overflow-x: hidden;
+	}
+	
+	#banner img{
+		width: 120%;
+		height: auto;
+	}
+	
+	.modalDialog:target{
+		display: flex;
+		opacity: 1;
+		pointer-events: auto;
+		overflow-y: auto;
+	}
+	
+	.modalDialog div{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		position: relative;
+		width: 80%;
+		min-height: 60%;
+		padding: 5px 20px 13px 20px;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 10px;
+		background-color: #fff;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.modalDialog p{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+		font-size: 1.2em;
+	}
+	
+	.modalDialog img{
+		width: 60%;
+	}
+	
+	.close{
+		right: -20px;
+		top: -20px;
+		width: 60px;
+		height: 60px;
+		font-size: 1.5em;
+	}
+	
+	.close:hover{
+		background-color: #b50909;
+	}
+	
+	footer{
+		flex-direction: column;
+		width: 100%; 
+		padding-top: 5%;
+		gap: 50px;
+		justify-content: center;
+	}
+	
+	footer .footer-text{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	footer .footer-text h3{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		align-items: center;
+		justify-content: center;
+		text-align: justify;
+	}
+	
+	footer .footer-text p{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		padding: 5%;
+		align-items: center;
+		justify-content: center;
+		text-align: justify;
+		font-size: 1.3em;
+	}
+
+	footer .footer-text a{
+		color: #00FFFF;
+	}
+
+	/* definir as propriedades da página clientes*/
+	#clientes-code{
+		flex-direction: column;
+	}
+	
+	#clientes-code .config-clientes{
+		width: 95%;
+		height: 60vh;
+	}
+	
+	#clientes-code .config-clientes img{
+		width: 80%;
+	}
+	
+	#clientes-code .config-clientes p{
+		font-size: 1.4em;
+	}
+
+	#txt-contato{
+		flex-direction: column;
+		max-width: 100%;
+		min-height: 100vh;
+		gap: 15px;
+	}
+	
+	#txt-contato form{
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		height: 100vh;
+		margin: 0;
+		padding: 20px 10px;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+	}
+	
+	#txt-contato form label{
+		margin: 0;
+		margin-top: 5%;
+		margin-bottom: 10px;
+		padding-left: 10px;
+		height: auto;
+		font-size: 1.6em;
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+	
+	#txt-contato form input{
+		display: flex;
+		flex-direction: row;
+		width: 95%;
+		height: 1.8em;
+		margin: 0;
+		margin-bottom: 5%;
+		border: solid #b50909 1px;
+		border-radius: 12px;
+		padding-left: 10px;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6em;
+	}
+	
+	#txt-contato form textarea{
+		display: flex;
+		flex-direction: row;
+		width: 95%;
+		height: 1.6em;
+		margin: 0;
+		margin-bottom: 15px;
+		border: solid #b50909 1px;
+		border-radius: 12px;
+		padding-left: 10px;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.6em;
+		min-height: 15vh;
+	}
+	
+	#txt-contato form button{
+		width: 50%;
+		height: 10vh;
+		font-size: 1.8em;
+		font-weight: bold;
+		margin: 0;
+		margin-top: 5%;
+		border-radius: 25px;
+		animation: pulsa-botao 3s infinite;
+	}
+	
+	#txt-contato form button:hover{
+		background-color: #e00606;
+		color: #777;
+		border-color: #777;
+		animation: pulsa-botao 3s infinite;
+	}
+	
+	#txt-contato form button:active{
+		background-color: #ff0000;
+		color: #ffffff;
+		border-color: #ffffff;
+		box-shadow: 0px 7px 10px 5px #720303;
+	}	
+	
+	#txt-contato #conta-data{
+		width: 95%;
+		height: 100vh;
+	}
+	
+	#txt-contato #conta-data h3{
+		margin-bottom: 10%;
+		font-size: 1.6em;
+	}
+	
+	#txt-contato #conta-data h5{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-height: 50px;
+		margin-top: 5%;
+		margin-bottom: 10%;
+		font-size: 1.2em;
+	}
+	
+	#txt-contato #conta-data h5 img{
+		display: flex;
+		flex-direction: row;
+		width: 20%;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+	}
+	
+
+	#container-sobre{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 95%;
+		min-height: 100vh;
+	}
+	
+	#txt-sobre{
+		flex-wrap: wrap;
+		width: 100%;
+		font-size: 1.4em;
+	}
+	
+	#txt-sobre dl{
+		width: 100%;
+	}
+	
+	#img-conteudo-sobre{
+		position: relative;
+		width: 100%;
+		padding: 2%;
+	}
+	
+	#img-conteudo-sobre img{
+		width: 100%;
+		border-radius: 20px;
+	}
+	
+	
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+	body{
+		min-height: 100vh;
+		max-width: 100vw;
+	}
+
+	header{
+		height: 15vh; 
+		position: relative;
+	}
+
+	/* definir as propriedades do logo */
+	.logo{
+		width: 40%; 
+	}
+	
+	.logo img{
+		margin-left: 0;
+	}
+	
+	/* definir as propriedades do menu */
+	nav {
+		display: none;
+		flex-direction: row;
+		position: absolute;
+		top: 100%;
+		height: 40vh;
+		width: 100%;
+		margin: 0;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: #dddddd90;
+		overflow-x: hidden;
+		border: none;
+		box-shadow: 0px 0px 25px 10px #bbb;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		width: 80%;
+		height: 100%;
+		padding: 0;
+		gap: 5%;
+		color: #fff;  
+		list-style: none;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	
+	nav ul li {
+		display: flex;
+		flex-direction: column; 
+		color: #fff; 
+		width: 100%; 
+		height: 20%;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5em; 
+		font-family: 'verdana'; 
+		border-radius: 20px;
+		border: none;
+	}
+	
+	nav ul li a {
+		padding-left: 20%;
+		color: #777;
+		align-items: center;
+		justify-content: flex-start;
+		border-radius: 20px;
+	}
+	
+	nav ul li a:active {
+		background-color: #ddd;
+		box-shadow: 0px 0px 25px 10px #bbb;
+	}
+	
+	.img-titulo{
+		justify-content: center;
+	}
+
+	.img-titulo img{
+		width: 70%;
+	}
+	
+
+	.botao-menu-mobile{
+		display: flex;
+		flex-direction: row;
+		width: 20%;
 		height: 100%;
 		align-items: center;
 		justify-content: center;
