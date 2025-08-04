@@ -673,8 +673,9 @@ footer .footer-text a:active{
 		display: flex;
 		flex-direction: row;
 		width: 100%;
+		min-height: 60%;
 		margin-top: 2%;
-		margin-bottom: 5%;
+		margin-bottom: 3%;
 		font-size: 1.2em;
 	}
 	
