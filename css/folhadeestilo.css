@@ -668,6 +668,11 @@ footer .footer-text a:active{
 		justify-content: center;
 	}
 
+	.modalDialog h1{
+		width: 100%;
+		font-size: 1.5em;
+		font-weight: 600;
+	}
 
 	.modalDialog p{
 		display: flex;
